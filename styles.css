@@ -1,0 +1,118 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5em;
+    text-shadow: 0 2px #816fca;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0.167em 0;
+}
+
+p {
+    font-size: 1.125em;
+    line-height: 1.35;
+}
+
+.beta-text {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 250px;
+    text-align: center;
+    color: #fff;
+    background-color: #9480e4;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-image: url("images/fern.jpg");
+    background-size: cover;
+}
+
+
+.main-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.img-main {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* =================
+    Form
+   ================= */
+input {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+}
+
+.btn {
+    font-family: inherit;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #8a71ec;
+}
+
+.btn:hover {
+    background-color: #b7a7f6;
+}
+
+/* =================
+    Media queries 
+   ================= */
+@media (min-width: 576px) {
+    body{
+        display: flex;
+    }
+    .intro,
+    .main-content{
+        width: 50;
+    }
+
+    .intro {
+        min-height: 100vh;
+    }
+
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    h2 {
+        font-size: 2.625em;
+    }
+
+    .beta-text {
+        font-size: 1.25em;
+    }
+}
